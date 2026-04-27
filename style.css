@@ -1,0 +1,177 @@
+*{
+    padding: 0;   
+    margin: 0;
+   }
+   
+   
+   
+   nav {
+       display: flex; 
+   justify-content: space-around;
+     align-items: center;
+   background-color: rgb(136, 156, 167);
+   }
+    nav a {
+       font-size: 19px;
+       text-decoration:none; 
+       color: rgb(35, 62, 66);
+       font-weight: 600;
+       transition: 0.8s; 
+       padding: 10px;
+       border-radius: 12px; 
+       font-style: italic;
+       font-weight: bold;
+    }
+   
+    nav a:hover { 
+       transition: 0.8s; 
+       background-color: rgb(102, 133, 136);
+    }
+    nav img {
+        width: 150px;
+        flex-direction: row;
+    }
+
+    .card {
+        width: 650px; /* Tamaño grande */
+        max-width: 90%; 
+        background: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+        overflow: hidden;
+        display: flex;
+        flex-direction: column; /* Apila elementos en móvil */
+        margin: 20px auto; /* Centra la tarjeta */
+        transition: 0.3s;
+        transition: 0.8s; /*tiempo que va durar */
+        background-color: rgb(189, 181, 172);
+        font-style: italic;
+       font-weight: bold;
+     }
+      
+      .card-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: 0.8s; /*tiempo que va durar */
+      }
+      .card-content {
+        padding: 20px;
+      }
+      
+      .card-content h2 {
+        margin-top: 0;
+        font-size: 24px;
+      }
+      
+      nav a:hover {  /*estilos al pasar el mouse por los enlaces*/
+        transition: 0.8s; /*tiempo que va durar */
+        background-color: rgb(191, 206, 184);
+      }
+      
+      .card:hover{
+        background-color: rgb(207, 227, 240);
+        transform: scale(1.05);
+      }
+
+
+      .categorias{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 25px;
+        gap: 30px; /*agrega separacion uniforme*/
+        flex-wrap: wrap; /*usar varias lineas*/
+     }
+     .categoria { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+     }
+     .categoria img {
+        width: 300px;
+        height: 180px;
+        object-fit: cover; /*mejorar calidad de las imagenes cuando se hagan pequeñas*/
+     }
+     .categoria h3 {
+        font-size: 25px;
+        font-weight: 400px;
+     }
+
+
+     body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9; /* Un color de fondo suave para que resalten las tarjetas */
+        padding: 40px 20px;
+    }
+    
+    .grid-container {
+        display: grid;
+        /* Esto hace que las tarjetas se adapten solas a la pantalla. */
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 24px; /* Espacio entre las tarjetas */
+        max-width: 1200px;
+        margin: 0 auto; /* Centra el contenedor en la pantalla */
+    }
+    
+    /* Estilo de cada tarjeta individual */
+    .categorias{
+        background-color: #ffffff;
+        border-radius: 12px; /
+      overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+        transition: transform 0.3s ease, box-shadow 0.3s ease; 
+
+     /* Efecto al pasar el mouse por encima de la tarjeta */
+    .card:hover{
+       transform: scale(1.05);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); 
+    }
+    
+    /* Ajustes de la imagen dentro de la tarjeta */
+    .categoria img {
+        width: 100%;
+        height: 200px; 
+        object-fit: cover; 
+        display: block;
+    }
+    
+    /* Contenedor de los textos */
+    .categoria-content {
+        padding: 20px;
+    }
+    
+    /* Estilo del título */
+    .categoria h2 {
+        font-size: 1.25rem;
+        color: #222;
+        margin-bottom: 12px;
+    }
+    
+    /* Estilo del resumen */
+    .categoria p {
+        font-size: 0.95rem;
+        color: #555;
+        line-height: 1.5;
+    }
+
+ }
+
+ main {
+    flex: 1; /* Empuja el footer hacia abajo */
+}
+
+/* Estilo básico del footer */
+.main-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.main-footer a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
